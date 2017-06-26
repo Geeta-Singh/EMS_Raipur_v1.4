@@ -1,0 +1,791 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/horizontalScrollView"
+    android:layout_alignParentTop="true"
+    android:fillViewport="true"
+    android:layout_alignParentBottom="true"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context="com.bydesign.ems1.Fragments.GraphicalCurrentFragment"
+        android:orientation="vertical">
+
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sectdevice"
+                android:text="  "
+                android:layout_weight=".8"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12dp"
+                android:textStyle="bold"
+               />
+
+
+
+                    <ImageButton
+                        android:layout_weight=".2"
+                        android:id="@+id/zoom_history"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:background="#ffffff"
+                        android:src="@drawable/ic_zoom_in_black_24dp"/>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView1"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/mainLayout1"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text1"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                       <!-- <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView2"
+                    android:fillViewport="true" >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mainLayout2"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text2"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                      <!--  <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView3"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/mainLayout3"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text3"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+<!--                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" >
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView4"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/mainLayout4"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text4"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                        <!--<com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView5"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/mainLayout5"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text5"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                       <!-- <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </ScrollView>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView6"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/mainLayout6"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text6"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                       <!-- <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView7"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:orientation="vertical"
+                        android:id="@+id/mainLayout7"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text7"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                     <!--   <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView8"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:orientation="vertical"
+                        android:id="@+id/mainLayout8"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text8"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                      <!--  <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView9"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:orientation="vertical"
+                        android:id="@+id/mainLayout9"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text9"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                     <!--   <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView10"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+android:orientation="vertical"
+
+                        android:id="@+id/mainLayout10"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text10"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                        <!--<com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView11"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/mainLayout11"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".2"
+                                android:layout_gravity="center"
+                                android:padding="5dp"
+                                android:textSize="1dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="#7cccf1"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.8"
+                                android:id="@+id/text11"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="hi geeta"
+                                android:textColor="@color/tablebackground"
+                                android:layout_marginRight="10dp"/>
+                        </LinearLayout>
+                      <!--  <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_viewp12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView12"
+                    android:fillViewport="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/mainLayout12"
+                        > <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".2"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+                            android:textSize="1dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="#7cccf1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.8"
+                            android:id="@+id/text12"
+                            android:textSize="14sp"
+                            android:padding="5dp"
+                            android:text="hi geeta"
+                            android:textColor="@color/tablebackground"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+                       <!-- <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/barchart12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />-->
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

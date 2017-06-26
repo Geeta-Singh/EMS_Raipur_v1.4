@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/exeedance"
+            android:title="@string/title_activity_dataCondition" />
+        <item
+            android:id="@+id/nav_8"
+            android:icon="@drawable/analyzer"
+            android:title="@string/title_activity_analyser"
+            />
+        <item
+            android:id="@+id/nav_5"
+            android:icon="@drawable/history"
+            android:title="@string/title_activity_history"
+            />
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/map"
+            android:title="@string/title_activity_maps" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="@string/title_activity_logout" />
+        <item
+            android:id="@+id/lang"
+            android:icon="@drawable/lang"
+            android:title="@string/title_activity_language"
+            >
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item android:id="@+id/radio_hindi"
+                        android:icon="@drawable/hindi"
+                        android:title="@string/hindi" />
+
+                    <item android:id="@+id/radio_english"
+                        android:icon="@drawable/english"
+                        android:title="@string/english" />
+                </group>
+            </menu>
+        </item>
+
+
+
+    </group>
+</menu>

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    tools:context="com.bydesign.ems1.Fragments.LangaugeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/RadioGroup">
+        <RadioButton android:id="@+id/radio_hindi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hindi"
+
+          />
+        <RadioButton android:id="@+id/radio_english"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+
+           />
+    </RadioGroup>
+
+</LinearLayout>

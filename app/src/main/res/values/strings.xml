@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">POLLUTION MONITOR</string>
+    <string name="title_activity_home_page">HomePage</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- Nav Drawer Menu Items -->
+
+    <string name="title_activity_navigationdrawer">POLLUTION MONITORING SYSTEM</string>
+    <string name="title_activity_pollution">POLLUTION MONITORING SYSTEM</string>
+    <string name="bydesign">Ace Gas Analysers Pvt Ltd (V1.3)</string>
+    <!--login-->
+    <string name="login">Login</string>
+    <string name="Signlogin">Sign in to </string>
+    <string name="hint_user">User Name</string>
+    <string name="hint_pass">Password</string>
+    <string name="oneTimePass">One Time Code</string>
+
+    <string name="title_activity_maps_activity_3">Map</string>
+
+    <string name="devicename">Device</string>
+    <string name="fromDate">From Date</string>
+    <string name="todate">To Date</string>
+    <string name="submit">Submit</string>
+    <string name="selectDate">Select Date</string>
+
+    <string name="hindi">Hindi</string>
+    <string name="english">English</string>
+
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_logout">Logout</string>
+    <string name="title_activity_current">Latest Data </string>
+    <string name="title_activity_dataCondition">Latest Data Exceedance</string>
+    <string name="title_activity_language">Language(Hindi/English)</string>
+    <string name="title_activity_analyser">Analyser Condition</string>
+    <string name="title_activity_history">History</string>
+
+    <string name="latestdata">Latest data(Table)</string>
+    <string name="latestgraph">Latest data(Graph)</string>
+    <string name="historytdata">History data(Table)</string>
+    <string name="histrograph">History data(Graph)</string>
+    <!--filter-->
+    <string name="filter">Filter</string>
+    <string name="filterbtn">Apply Filter</string>
+    <string name="devicetype">Device Type</string>
+    <string name="selectState">Select State</string>
+    <string name="selectDis">Select District</string>
+    <string name="selectORG">Select ORganization</string>
+
+    <string name="red">Red:Above Limit</string>
+    <string name="green">Green: Below Limit</string>
+    <string name="yellow">Yellow: Between Limit</string>
+    <string name="noinfo">Device with No Info</string>
+    <string name="calibraion">Device under Calibration</string>
+    <string name="totaldevice">Total Devices</string>
+    <string name="falyty">Faulty Device </string>
+    <string name="working">Working Device</string>
+    <string name="maintain">  Device Under Maintenance </string>
+
+    <!--alert -->
+    <string name="internet">please check internet connection
+</string>
+    <string name="Nodata">Data is not available </string>
+    <string name="dms">Diagnostic Message </string>
+    <string name="error">Error: Cannot open or share created PDF report.   </string>
+    <string name="lastPdf">Last downloaded file </string>
+    <string name="Plspdf">Please download file </string>
+    <string name="filenotshare">File not shared </string>
+    <string name="Latestdata">LATEST DATA FOR DEVICE  </string>
+    <string name="invalidUser">Invalid USer </string>
+    <string name="notify"> Data higher then threshold </string>
+    <string name="alertNotify">Alert Current Data </string>
+    <!-- <string name="downloadPdf">Please download Analyser status report pdf </string>
+    <string name="summaryDevice">Summary of Device from </string>-->
+    <string name="failed">failed status </string>
+    <!--  <string name="dates">End date should be greater then to Start date</string>-->
+    <string name="enterDate">Please enter date </string>
+    <string name="dialog">Please wait........</string>
+    <string name="devicenotfound">Device not found</string>
+    <string name="zoom">You can ZoomIn and ZoomOut to get better view</string>
+    <string name="OTpResult">Another user is already logged in.OTP has been sent to your registered email-id, please confirm it to log-in
+    </string>
+    <string name="usernamepassword">Please enter valid user name and password
+    </string>
+    <string name="mendatory">Username and password are mandatory
+    </string>
+    <string name="server">Not Connected to server
+    </string>
+    <string name="InvalidOTP">Invalid OTP
+    </string>
+    <string name="Authenticating">Authenticating...
+    </string>
+    <string name="filterSucess">Fliter applied successfully
+    </string>
+    <string name="CEMSonly">you can select only CEMS device type</string>
+    <string name="cancel">Cancel
+
+    </string>
+    <string name="noDevice">Device not found</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--end alert-->
+
+</resources>

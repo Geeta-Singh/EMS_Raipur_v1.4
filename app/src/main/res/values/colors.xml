@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BCD4</color>
+    <!--//#8aae4c-->
+    <color name="colorPrimaryDark">#00838F</color>
+    <!--#1a6e2b-->
+    <color name="colorAccent">#00BCD4</color>
+    <color name="pink">#00BCD4</color>
+    <color name="indigo">#98e4db</color>
+    <color name="gray">#faf6f6</color>
+    <color name="fab">#36ff9e</color>
+    <color name="background">#ECEFF1</color><!--/083044/#073c56-->
+    <color name="color">#FF636863</color>
+    <color name="tablebackground">#303b44</color>
+</resources>

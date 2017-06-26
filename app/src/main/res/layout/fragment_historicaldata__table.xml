@@ -1,0 +1,226 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+
+    android:orientation="vertical"
+    tools:context="com.bydesign.ems1.Fragments.AvgData_tableFragment">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight=".8"
+                android:gravity="left"
+                android:text="@string/devicename"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1.2"
+                android:gravity="right"
+                android:theme="@style/MyButton"
+
+                />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="4dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2.2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="@string/selectDate"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:editable="false"
+                android:hint="@string/fromDate"
+                android:inputType="none"
+                android:textSize="12dp">
+
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/editText1"
+                android:layout_weight=".2"
+                android:background="@drawable/calender48"
+                android:contentDescription="From Date"
+                android:cropToPadding="true" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardCornerRadius="4dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/savePdf"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|center"
+            android:elevation="8dp"
+            android:src="@drawable/ic_get_app_black_24dp"
+            app:backgroundTint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/show"
+            style="@style/Base.TextAppearance.AppCompat.Widget.Button.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:theme="@style/MyButton" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/share"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|center"
+            android:elevation="6dp"
+            android:src="@drawable/share"
+            app:backgroundTint="@color/colorPrimary" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="4dp">
+
+            <HorizontalScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/maintableH"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:elevation="6dp"
+
+                        android:gravity="center_horizontal"
+                        android:stretchColumns="*"></TableLayout>
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical">
+
+
+                        <TableLayout
+                            android:id="@+id/maintable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:stretchColumns="*"></TableLayout>
+
+                    </ScrollView>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </android.support.v7.widget.CardView>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="50dip"
+            android:minHeight="50dip"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/waitingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/dialog"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23dp" />
+    </LinearLayout>
+</LinearLayout>
